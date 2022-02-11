@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 100%;
+  width: 100%;
+}
+
+.buttons,
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 100%;
+}
+
+.result {
+  height: 100px;
+  border: 2px solid #bababa;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5em;
+  background: #858693;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.button {
+  display: flex;
+  flex: 0 1 25%;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 2px solid #bababa;
+  border-top: none;
+  border-left: none;
+  cursor: pointer;
+  background: #e0e0e0;
+  font-size: 2em;
+}
+
+.button:nth-child(4n+1) {
+  border-left: 1px solid #bababa;
+}
+
+.button:nth-child(4n),
+.button:last-child {
+  background: #f39148;
+  color: #000;
+}
+
+.zero-btn {
+  flex-grow: 2;
+}
+
+.doubleBordered {
+  border: 2px solid #bababa;
+}
