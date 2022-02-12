@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Button from './Button';
 import './Cal.css';
 import calculate from '../logic/calculate';
+import Buttons from './Buttons';
 
 const Calculator = () => {
-  const [obj, setObj] = useState({});
+  const [objectState, setObjectState] = useState({});
   useEffect(() => {
-    setObj({
+    setObjectState({
       total: '0',
       next: null,
       operation: null,
@@ -14,9 +14,9 @@ const Calculator = () => {
   }, []);
 
   const onBtnClick = (title) => {
-    setObj(calculate(obj, title));
+    setObjectState(calculate(objectState, title));
   };
-  const { total, next, operation } = obj;
+  const { total, next, operation } = objectState;
   return (
     <>
       <div className="container">
@@ -26,25 +26,7 @@ const Calculator = () => {
           { next || '' }
         </div>
         <div className="buttons">
-          <Button classStr="button resetBtn" onBtnClick={onBtnClick} title="AC" />
-          <Button classStr="button negative operator" onBtnClick={onBtnClick} title="+/-" />
-          <Button classStr="button operator percent" onBtnClick={onBtnClick} title="%" />
-          <Button classStr="button operator" onBtnClick={onBtnClick} title="÷" />
-          <Button classStr="button number" onBtnClick={onBtnClick} title="7" />
-          <Button classStr="button number" onBtnClick={onBtnClick} title="8" />
-          <Button classStr="button number" onBtnClick={onBtnClick} title="9" />
-          <Button classStr="button operator" onBtnClick={onBtnClick} title="x" />
-          <Button classStr="button number" onBtnClick={onBtnClick} title="4" />
-          <Button classStr="button number" onBtnClick={onBtnClick} title="5" />
-          <Button classStr="button number" onBtnClick={onBtnClick} title="6" />
-          <Button classStr="button operator" onBtnClick={onBtnClick} title="-" />
-          <Button classStr="button number" onBtnClick={onBtnClick} title="1" />
-          <Button classStr="button number" onBtnClick={onBtnClick} title="2" />
-          <Button classStr="button number" onBtnClick={onBtnClick} title="3" />
-          <Button classStr="button operator" onBtnClick={onBtnClick} title="+" />
-          <Button classStr="button number zero-btn" onBtnClick={onBtnClick} title="0" />
-          <Button classStr="button number dot" onBtnClick={onBtnClick} title="." />
-          <Button classStr="button operator" onBtnClick={onBtnClick} title="=" />
+          <Buttons onBtnClick={onBtnClick} />
         </div>
       </div>
     </>
