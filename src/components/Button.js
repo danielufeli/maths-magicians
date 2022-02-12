@@ -4,10 +4,10 @@ import './Cal.css';
 
 class Button extends PureComponent {
   render() {
-    const { classStr, title } = this.props;
+    const { classStr, title, onBtnClick } = this.props;
     return (
       <>
-        <button type="button" className={classStr}>{title}</button>
+        <button type="button" className={classStr} onClick={() => onBtnClick(title)}>{title}</button>
       </>
     );
   }
@@ -16,6 +16,7 @@ class Button extends PureComponent {
 Button.propTypes = {
   classStr: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  onBtnClick: PropTypes.func.isRequired,
 };
 
 export default Button;
