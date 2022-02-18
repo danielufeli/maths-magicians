@@ -54,3 +54,9 @@
 .doubleBordered {
   border: 2px solid #bababa;
 }
+
+.float-r {
+  position: absolute;
+  right: 0;
+  padding: 25px;
+}

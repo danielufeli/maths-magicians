@@ -21,13 +21,15 @@ const Calculator = () => {
     <>
       <div className="container">
         <h2 className="title"> Let&apos;s do some maths </h2>
-        <div className="result">
-          {total || ''}
-          {operation || ''}
-          {next || ''}
-        </div>
-        <div className="buttons">
-          <Buttons onBtnClick={onBtnClick} />
+        <div className="float-r">
+          <div className="result">
+            {total || ''}
+            {operation || ''}
+            {next || ''}
+          </div>
+          <div className="buttons">
+            <Buttons onBtnClick={onBtnClick} />
+          </div>
         </div>
       </div>
     </>
