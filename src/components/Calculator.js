@@ -20,13 +20,16 @@ const Calculator = () => {
   return (
     <>
       <div className="container">
-        <div className="result">
-          { total || '' }
-          { operation || '' }
-          { next || '' }
-        </div>
-        <div className="buttons">
-          <Buttons onBtnClick={onBtnClick} />
+        <h2 className="title"> Let&apos;s do some maths </h2>
+        <div className="float-r">
+          <div className="result">
+            {total || ''}
+            {operation || ''}
+            {next || ''}
+          </div>
+          <div className="buttons">
+            <Buttons onBtnClick={onBtnClick} />
+          </div>
         </div>
       </div>
     </>
