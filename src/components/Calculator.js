@@ -20,10 +20,11 @@ const Calculator = () => {
   return (
     <>
       <div className="container">
+        <h2 className="title"> Let&apos;s do some maths </h2>
         <div className="result">
-          { total || '' }
-          { operation || '' }
-          { next || '' }
+          {total || ''}
+          {operation || ''}
+          {next || ''}
         </div>
         <div className="buttons">
           <Buttons onBtnClick={onBtnClick} />
