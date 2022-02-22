@@ -15,6 +15,9 @@
 
 [Live Demo Link](https://danielufeli.github.io/maths-magicians/)
 
+[Netlify Link:](https://danielufeli-makes-great-sites.netlify.app/)
+
+[Heroku Link:](https://protected-mesa-66690.herokuapp.com/)
 
 ## Getting Started
 
