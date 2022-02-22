@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://danielufeli.github.io/maths-magicians/)
+[GitHubPages Link](https://danielufeli.github.io/maths-magicians/)
 
 [Netlify Link:](https://danielufeli-makes-great-sites.netlify.app/)
 
